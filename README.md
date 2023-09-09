@@ -58,6 +58,7 @@ function:
 
 ```jsx
 function Parent() {
+
   const randomColor = getRandomColor();
   const [color, setColor] = useState(randomColor); // initial value for color state
 
@@ -204,6 +205,7 @@ that new function:
 
 ```jsx
 function Child({ onChangeColor, color }) {
+  
   function handleClick() {
     const newColor = getRandomColor();
     onChangeColor(newColor);
